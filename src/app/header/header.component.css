@@ -1,0 +1,37 @@
+header {
+	background-color: #333;
+	padding: 0px;
+    border-bottom: 1px solid orange;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e67e22;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo{
+    font-size: 1em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 1em;
+    display: inline-block;
+}

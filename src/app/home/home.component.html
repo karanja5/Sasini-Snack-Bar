@@ -1,0 +1,26 @@
+<app-search-bar></app-search-bar>
+<app-tags></app-tags>
+<app-not-found [visible]="!foods || foods.length<=0" notFoundMessage="Product Not Available"></app-not-found>
+<ul>
+    <li *ngFor = "let food of foods" >
+        <a routerLink="/food/{{food.id}}">
+            <img src="{{food.imgUrl}}" alt="">
+            <div class="content">
+                <div class="name">{{food.name}}</div>
+                <div class="wait-time">
+                    <span>🕔</span>
+                    {{food.waitTime}}
+                </div>
+                <div class="footer">
+                    <div class="description">
+                        <span>
+                            {{food.description}}
+                        </span>
+                    </div>
+                </div>
+                <div class="price">Ksh {{food.price}}</div>
+
+            </div>
+        </a>
+    </li>
+</ul>

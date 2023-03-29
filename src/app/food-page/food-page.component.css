@@ -1,0 +1,88 @@
+.parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container > *{
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+.container img{
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 25rem;
+  margin: 1rem;
+}
+
+.container .details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.container .details .header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .details .header .name{
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+}
+.container .details .header .wait-time{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.container .details .price{
+  font-size: 1.2rem;
+  margin: 2rem 2rem 2rem 0;
+}
+.container .details .price::before{
+  content: "Price: Ksh";
+  font-weight: 600;
+
+}
+.container .details .description{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parent .button button{
+  justify-content: center;
+  color: whitesmoke;
+  background-color: orange;
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem;
+  border: 10rem;
+  width: 15rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+.parent .button button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
